@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class HelloWorldController {
-
+    // GET - Rtrieve details of a resource
     //"Hello World"
     @GetMapping (path = "/hello-world")
     public String helloWorld(){
@@ -28,4 +28,12 @@ public class HelloWorldController {
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name){
         return new HelloWorldBean(String.format("Hello World, %s", name));
     }
+
+    // POST - Create a new resource
+
+    // PUT - Update an existing resource
+
+    // Patch - Update part of a resource
+
+    // DELETE - Delete a resource
 }
