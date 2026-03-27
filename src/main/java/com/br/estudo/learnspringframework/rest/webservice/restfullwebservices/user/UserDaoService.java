@@ -39,7 +39,7 @@ public class UserDaoService {
                 .stream()
                 .filter(predicate)
                 .findFirst()
-                .get();
+                .orElse(null);
     }
 
 
