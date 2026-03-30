@@ -10,6 +10,11 @@ public class VersioningPersonController {
 
     @GetMapping("/v1/person")
     public PersonV1 getFirstVersionOfPerson(){
-        return new PersonV1("Pedro");
+        return new PersonV1("Pedro Oliveria");
+    }
+
+    @GetMapping("/v2/person")
+    public PersonV2 getSecVersionOfPerson(){
+        return new PersonV2(new Name("Pedro", "Oliveira"));
     }
 }
